@@ -15,58 +15,10 @@ const TARGET_SIGNS = [
     gifUrl: "/learn_gifs/HI.gif",
   },
   {
-    gloss: "apa_khabar",
-    label: "APA KHABAR (How are you?)",
-    description: "Ask 'How are you?' in MSL.",
-    gifUrl: "/learn_gifs/APAKHABAR.gif",
-  },
-  {
-    gloss: "abang",
-    label: "ABANG (older brother)",
-    description: "Sign for 'older brother'.",
-    gifUrl: "/learn_gifs/ABANG.gif",
-  },
-  {
     gloss: "ambil",
     label: "AMBIL (take)",
     description: "Sign for 'take'.",
     gifUrl: "/learn_gifs/AMBIL.gif",
-  },
-  {
-    gloss: "ayah",
-    label: "AYAH (father)",
-    description: "Sign for 'father'.",
-    gifUrl: "/learn_gifs/BAPA.gif",
-  },
-  {
-    gloss: "bapa",
-    label: "BAPA (father)",
-    description: "Alternative sign for 'father'.",
-    gifUrl: "/learn_gifs/BAPA.gif",
-  },
-  {
-    gloss: "bapa_saudara",
-    label: "BAPA SAUDARA (uncle)",
-    description: "Sign for 'uncle'.",
-    gifUrl: "/learn_gifs/SAUDARA.gif",
-  },
-  {
-    gloss: "bawa",
-    label: "BAWA (bring)",
-    description: "Sign for 'bring'.",
-    gifUrl: "/learn_gifs/BAWA.gif",
-  },
-  {
-    gloss: "buat",
-    label: "BUAT (do / make)",
-    description: "Sign for 'do' or 'make'.",
-    gifUrl: "/learn_gifs/BUAT.gif",
-  },
-  {
-    gloss: "curi",
-    label: "CURI (steal)",
-    description: "Sign for 'steal'.",
-    gifUrl: "/learn_gifs/CURI.gif",
   },
   {
     gloss: "hari",
@@ -93,10 +45,16 @@ const TARGET_SIGNS = [
     gifUrl: "/learn_gifs/KAKAK.gif",
   },
   {
-    gloss: "lelaki",
-    label: "LELAKI (male)",
-    description: "Sign for 'male'.",
-    gifUrl: "/learn_gifs/LELAKI.gif",
+    gloss: "keluarga",
+    label: "KELUARGA (family)",
+    description: "Sign for 'family'.",
+    gifUrl: "/learn_gifs/KELUARGA.gif",
+  },
+  {
+    gloss: "kereta",
+    label: "KERETA (car)",
+    description: "Sign for 'car'.",
+    gifUrl: "/learn_gifs/KERETA.gif",
   },
   {
     gloss: "lemak",
@@ -111,12 +69,6 @@ const TARGET_SIGNS = [
     gifUrl: "/learn_gifs/LUPA.gif",
   },
   {
-    gloss: "main",
-    label: "MAIN (play)",
-    description: "Sign for 'play'.",
-    gifUrl: "/learn_gifs/MAIN.gif",
-  },
-  {
     gloss: "marah",
     label: "MARAH (angry)",
     description: "Sign for 'angry'.",
@@ -129,18 +81,6 @@ const TARGET_SIGNS = [
     gifUrl: "/learn_gifs/MINUM.gif",
   },
   {
-    gloss: "panas_2",
-    label: "PANAS (hot)",
-    description: "Sign for 'hot'.",
-    gifUrl: "/learn_gifs/PANAS.gif",
-  },
-  {
-    gloss: "payung",
-    label: "PAYUNG (umbrella)",
-    description: "Sign for 'umbrella'.",
-    gifUrl: "/learn_gifs/PAYUNG.gif",
-  },
-  {
     gloss: "pergi",
     label: "PERGI (go)",
     description: "Sign for 'go'.",
@@ -151,18 +91,6 @@ const TARGET_SIGNS = [
     label: "PUKUL (hit)",
     description: "Sign for 'hit'.",
     gifUrl: "/learn_gifs/PUKUL.gif",
-  },
-  {
-    gloss: "ribut",
-    label: "RIBUT (storm)",
-    description: "Sign for 'storm' or 'strong wind'.",
-    gifUrl: "/learn_gifs/RIBUT.gif",
-  },
-  {
-    gloss: "siapa",
-    label: "SIAPA (who)",
-    description: "Sign for 'who'.",
-    gifUrl: "/learn_gifs/SIAPA.gif",
   },
   {
     gloss: "tanya",
@@ -181,10 +109,7 @@ const normalizeGloss = (g) => (g || "").trim().toLowerCase();
 const CHEAT_MODE = true;
 
 const CHEAT_GLOSSES = [
-  "abang", "ambil", "apa_khabar", "ayah", "bapa", "bapa_saudara",
-  "bawa", "buat", "curi", "hari", "hi", "hujan", "jangan", "kakak",
-  "lelaki", "lemak", "lupa", "main", "marah", "minum", "panas_2",
-  "payung", "pergi", "pukul", "ribut", "siapa", "tanya",
+  "ambil", "hari", "hi", "hujan", "jangan", "kakak", "keluarga", "kereta", "lemak", "lupa", "marah", "minum", "pergi", "pukul", "tanya"
 ].map((g) => g.toLowerCase());
 
 function LearnPage() {
